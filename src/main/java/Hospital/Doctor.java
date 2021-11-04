@@ -20,7 +20,7 @@ public class Doctor {
     public static final String ANSI_PURPLE_BACKGROUND = "\u001B[45m";
     public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
     public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
-
+    private int id;
     private String name;
     private String surname;
     private String[][] timetable={
@@ -34,6 +34,14 @@ public class Doctor {
             {"'7'-15:00-15:30 \t","'15'-15:00-15:30\t","'23'-15:00-15:30\t","'31'-15:00-15:30\t","'39'-15:00-15:30\t"},
             {"'8'-16:00-16:30 \t","'16'-16:00-16:30\t","'24'-16:00-16:30\t","'32'-16:00-16:30\t","'40'-16:00-16:30\t"},
     };
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -80,7 +88,50 @@ public class Doctor {
         }
         return String.format("%s %s\n                                          Расписание:%s",name,surname,str);
     }
-
+    public  void getTime(int time){
+        switch (time){
+            case 1 -> System.out.println(ANSI_RED+"ПН, 8:00-8:30\t"+ANSI_RESET);
+            case 2 -> System.out.println(ANSI_RED+"ПН, 9:00-9:30\t"+ANSI_RESET);
+            case 3 -> System.out.println(ANSI_RED+"ПН, 10:00-10:30\t"+ANSI_RESET);
+            case 4 -> System.out.println(ANSI_RED+"ПН, 11:00-11:30\t"+ANSI_RESET);
+            case 5 -> System.out.println(ANSI_RED+"ПН, 12:00-12:30\t"+ANSI_RESET);
+            case 6 -> System.out.println(ANSI_RED+"ПН, 13:00-13:30\t"+ANSI_RESET);
+            case 7 -> System.out.println(ANSI_RED+"ПН, 14:00-14:30\t"+ANSI_RESET);
+            case 8 -> System.out.println(ANSI_RED+"ПН, 15:00-15:30\t"+ANSI_RESET);
+            case 9 -> System.out.println(ANSI_RED+"ВТ, 8:00-8:30\t"+ANSI_RESET);
+            case 10 -> System.out.println(ANSI_RED+"ВТ, 9:00-9:30\t"+ANSI_RESET);
+            case 11-> System.out.println(ANSI_RED+"ВТ, 10:00-10:30\t"+ANSI_RESET);
+            case 12 -> System.out.println(ANSI_RED+"ВТ, 11:00-11:30\t"+ANSI_RESET);
+            case 13-> System.out.println(ANSI_RED+"ВТ, 12:00-12:30\t"+ANSI_RESET);
+            case 14-> System.out.println(ANSI_RED+"ВТ, 13:00-13:30\t"+ANSI_RESET);
+            case 15-> System.out.println(ANSI_RED+"ВТ, 14:00-14:30\t"+ANSI_RESET);
+            case 16-> System.out.println(ANSI_RED+"ВТ, 15:00-15:30\t"+ANSI_RESET);
+            case 17 -> System.out.println(ANSI_RED+"СР, 8:00-8:30\t"+ANSI_RESET);
+            case 18 -> System.out.println(ANSI_RED+"СР, 9:00-9:30\t"+ANSI_RESET);
+            case 19-> System.out.println(ANSI_RED+"СР, 10:00-10:30\t"+ANSI_RESET);
+            case 20 -> System.out.println(ANSI_RED+"СР, 11:00-11:30\t"+ANSI_RESET);
+            case 21-> System.out.println(ANSI_RED+"СР, 12:00-12:30\t"+ANSI_RESET);
+            case 22-> System.out.println(ANSI_RED+"СР, 13:00-13:30\t"+ANSI_RESET);
+            case 23-> System.out.println(ANSI_RED+"СР, 14:00-14:30\t"+ANSI_RESET);
+            case 24-> System.out.println(ANSI_RED+"СР, 15:00-15:30\t"+ANSI_RESET);
+            case 25 -> System.out.println(ANSI_RED+"ЧТ, 8:00-8:30\t"+ANSI_RESET);
+            case 26 -> System.out.println(ANSI_RED+"ЧТ, 9:00-9:30\t"+ANSI_RESET);
+            case 27-> System.out.println(ANSI_RED+"ЧТ, 10:00-10:30\t"+ANSI_RESET);
+            case 28 -> System.out.println(ANSI_RED+"ЧТ, 11:00-11:30\t"+ANSI_RESET);
+            case 29-> System.out.println(ANSI_RED+"ЧТ, 12:00-12:30\t"+ANSI_RESET);
+            case 30-> System.out.println(ANSI_RED+"ЧТ, 13:00-13:30\t"+ANSI_RESET);
+            case 31-> System.out.println(ANSI_RED+"ЧТ, 14:00-14:30\t"+ANSI_RESET);
+            case 32-> System.out.println(ANSI_RED+"ЧТ, 15:00-15:30\t"+ANSI_RESET);
+            case 33 -> System.out.println(ANSI_RED+"ПТ, 8:00-8:30\t"+ANSI_RESET);
+            case 34 -> System.out.println(ANSI_RED+"ПТ, 9:00-9:30\t"+ANSI_RESET);
+            case 35-> System.out.println(ANSI_RED+"ПТ, 10:00-10:30\t"+ANSI_RESET);
+            case 36 -> System.out.println(ANSI_RED+"ПТ, 11:00-11:30\t"+ANSI_RESET);
+            case 37-> System.out.println(ANSI_RED+"ПТ, 12:00-12:30\t"+ANSI_RESET);
+            case 38-> System.out.println(ANSI_RED+"ПТ, 13:00-13:30\t"+ANSI_RESET);
+            case 39-> System.out.println(ANSI_RED+"ПТ, 14:00-14:30\t"+ANSI_RESET);
+            case 40-> System.out.println(ANSI_RED+"ПТ, 15:00-15:30\t"+ANSI_RESET);
+        }
+    }
     public void goToReception(int choose){
         switch (choose) {
             case 1 -> timetable[1][0] = ANSI_RED+"     занято     \t"+ANSI_RESET;

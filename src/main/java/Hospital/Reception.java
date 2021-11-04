@@ -9,6 +9,10 @@ public class Reception {
 
     public Reception(Department... departments) {
         this.departments=new ArrayList<Department>();
+        int counter=1;
+        for (Department department:departments){
+            department.setId(counter++);
+        }
         this.departments.addAll(Arrays.asList(departments));
     }
 
@@ -19,7 +23,15 @@ public class Reception {
     public void setDepartments(List<Department> departments) {
         this.departments = departments;
     }
+    public void getUslDocTime(int usl,int doc,int time){
+        for(Department department:departments){
+            if(department.getId()==usl) {
+                System.out.println("Услуга: \n" + department.getDepartment_name());
+                department.getDoctor(doc,time);
+            }
 
+        }
+    }
     @Override
     public String toString() {
         StringBuilder stringBuilder=new StringBuilder();

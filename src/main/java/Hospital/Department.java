@@ -5,12 +5,25 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Department {
-    String department_name;
-    List<Doctor> doctors;
+    private String department_name;
+    private List<Doctor> doctors;
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public Department(String department_name, Doctor... doctors) {
         this.department_name =  department_name;
         this.doctors=new ArrayList<>();
+        int counter=1;
+        for (Doctor doctor:doctors){
+            doctor.setId(counter++);
+        }
         this.doctors.addAll(Arrays.asList(doctors));
     }
 
@@ -29,7 +42,18 @@ public class Department {
     public void setDoctors(List<Doctor> doctors) {
         this.doctors = doctors;
     }
+    public void getDoctor(int id,int time){
+        for(Doctor doctor:doctors){
+            if(id==doctor.getId()) {
+                System.out.println("Доктор: ");
+                System.out.println(doctor.getName() + " " + doctor.getSurname());
+                System.out.print("Время: ");
+                doctor.getTime(time);
+            }
 
+        }
+
+    }
     @Override
     public String toString() {
         StringBuilder stringBuilder=new StringBuilder();
