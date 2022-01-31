@@ -44,13 +44,12 @@ public class GreetingController {
 
     @PostMapping("filter")
     public String filter(@RequestParam String filter,Map<String,Object> model){
-        /*Iterable<Message> messages;
+        Iterable<Message> messages;
 
         if(filter==null||filter.isEmpty())
             messages=messageRepo.findAll();
         else
-            messages=messageRepo.findByTag(filter);*/
-        List<Message> messages=messageRepo.findByTag(filter);
+            messages=messageRepo.findByTag(filter);
         model.put("messages",messages);
         return "main";
     }

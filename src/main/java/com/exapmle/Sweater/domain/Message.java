@@ -6,12 +6,12 @@ import javax.persistence.*;
 public class Message {
 
     @Id //указывает что это поле идентификатор
-    @GeneratedValue(strategy= GenerationType.AUTO) //нужен для автогенерации идентификаторов
+    //@GeneratedValue(strategy= GenerationType.AUTO) //нужен для автогенерации идентификаторов
     private Integer id;
 
     private String text;
-    private String tag;
 
+    private String tag;
 
     public Integer getId() {
         return id;
@@ -21,6 +21,12 @@ public class Message {
     }
 
     public Message(String text, String tag) {
+        this.text = text;
+        this.tag = tag;
+    }
+
+    public Message(Integer id, String text, String tag) {
+        this.id = id;
         this.text = text;
         this.tag = tag;
     }

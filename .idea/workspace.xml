@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6cb730a7-4f20-43f9-8a3f-b014e3b24dcb" name="Changes" comment="spring boot app" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,16 +24,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/exapmle/Sweater/Application.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$USER_HOME$/.jdks/corretto-1.8.0_312/src.zip!/sun/nio/ch/ServerSocketChannelImpl.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/exapmle/Sweater/repos/MessageRepo.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/exapmle/Sweater/domain/Message.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/greeting.mustache" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/main.mustache" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/main.mustache" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.14/spring-beans-5.3.14.jar!/org/springframework/beans/factory/annotation/Autowired.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/exapmle/Sweater/Application.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/greeting.mustache" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/exapmle/Sweater/repos/MessageRepo.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/exapmle/Sweater/GreetingController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-1.8.0_312/src.zip!/sun/nio/ch/ServerSocketChannelImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/exapmle/Sweater/domain/Message.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -106,7 +109,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\Aleksandr\AppData\Roaming\Subversion</configuration>
   </component>
@@ -138,32 +141,6 @@
     </ignored-roots>
     <MESSAGE value="spring boot app" />
     <option name="LAST_COMMIT_MESSAGE" value="spring boot app" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1877" height="277" key="GridCell.Tab.0.bottom" timestamp="1642703174537">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642703174537" />
-    <state width="1877" height="277" key="GridCell.Tab.0.center" timestamp="1642703174537">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642703174537" />
-    <state width="1877" height="277" key="GridCell.Tab.0.left" timestamp="1642703174537">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642703174537" />
-    <state width="1877" height="277" key="GridCell.Tab.0.right" timestamp="1642703174537">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642703174537" />
-    <state x="540" y="254" key="IDE.errors.dialog" timestamp="1642703342503">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="540" y="254" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1642703342503" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1642704920618">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1642704920618" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
